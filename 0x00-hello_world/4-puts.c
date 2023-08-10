@@ -1,7 +1,9 @@
 #include <stdio.h>
 
+
 /**
- * main - prints "programming is like building a multilingual puzzle, followed a new line."
+ * main - prints "programming is like building a multilingual 
+ * puzzle, followed a new line."
  * return 0.
  */
 
