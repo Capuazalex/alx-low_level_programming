@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
  * main - prints three number combination
- *
  * Return: Always 0 (Success)
  */
 int main(void)
