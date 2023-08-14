@@ -1,10 +1,8 @@
 #include <stdio.h>
-
 /**
  * main - prints all different possible combinations of these digits
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int ones = '0';
