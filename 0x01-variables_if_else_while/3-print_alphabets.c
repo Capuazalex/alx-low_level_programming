@@ -1,26 +1,26 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
- * main - Entry point
- * Return: Always 0 (Successs)
+ * main - returns alphabet both lower and upper cases
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char c;
-	char d;
+	int ch = 'a';
+	int CH = 'A';
 
-	c = 'a';
-	d = 'd';
-	while
-		(c <= 'z') {
-			putchar(c);
-			c++;
-		}
-	while
-		(d <= 'z') {
-			putchar(d);
-			d++;
-		}
+	while (ch <= 'z')
+	{
+		putchar(ch);
+		ch++;
+	}
+	while (CH <= 'Z')
+	{
+		putchar(CH);
+		CH++;
+	}
 	putchar('\n');
 	return (0);
 }
-
