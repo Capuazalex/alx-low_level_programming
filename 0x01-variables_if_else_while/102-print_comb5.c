@@ -1,40 +1,33 @@
 #include <stdio.h>
+
 /**
- * main - prints three number combination
+ * main - prints all possible combinations of two two-digit numbers
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i = '0';
-	int j = '0';
-	int k = '0';
-	
-	while (i <= '7')
+	int i, j;
+
+	for (i = 0; i < 100; i++)
 	{
-		while (j <= '8')
+		for (j = 0; j < 100; j++)
 		{
-			while (k <= '9')
+			if (i < j)
 			{
-				if (i < j && j < k)
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
 				{
-					putchar(i);
-					putchar(j);
-					putchar(k);
-					if (!(i == '7' && j == '8' && k == '9'))
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(',');
+					putchar(' ');
 				}
-				k++;
 			}
-			k = '0';
-			j++;
+
 		}
-		j = '0';
-		i++;
 	}
 	putchar('\n');
 	return (0);
 }
-
