@@ -9,7 +9,7 @@
  * Return: pointer to the memory allocated
  * which is an array of character
  */
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	size_t i, j;
 	char *strdout;
