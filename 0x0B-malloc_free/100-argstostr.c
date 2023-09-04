@@ -1,4 +1,4 @@
-#inlcude "main.h"
+#include "main.h"
 #include <stdlib.h>
 /**
  * argstostr - concatenate all program arguments
@@ -12,7 +12,7 @@ char *argstostr(int ac, char **av)
 	char *aout;
 	int i, n, k = 0, len = 0;
 
-	for (ac == 0 || av == NULL)
+	if (ac == 0 || av == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
